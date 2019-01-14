@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="1100" pageHeight="768" columnWidth="1060" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ce532874-3587-4f71-9410-0c4853096cad">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="35cd01ac-f846-4ebe-85b7-31b2bba8427a"/>
+	<queryString>
+		<![CDATA[select * from `student`]]>
+	</queryString>
+	<field name="stu_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stu_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="course_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="course_fee" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Batch_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Discount" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="batch_sche" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="s_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="s_email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="s_address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="payment" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="due" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="550" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="81" height="20" uuid="9f952ec2-bdda-4f96-ab22-32137f73d581"/>
+				<textFieldExpression><![CDATA[$F{stu_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="0" width="81" height="20" uuid="82399638-8c61-4067-9449-ef397a2a5bd6"/>
+				<textFieldExpression><![CDATA[$F{stu_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="0" width="81" height="20" uuid="eb76f5a3-3e88-4a07-b8f6-25afe9eb2313"/>
+				<textFieldExpression><![CDATA[$F{course_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="0" width="81" height="20" uuid="3b5fb8bb-bf1c-42fe-882e-71b211c5bcea"/>
+				<textFieldExpression><![CDATA[$F{course_fee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="0" width="81" height="20" uuid="0bedb2a0-8e4b-4389-821b-5562d405cace"/>
+				<textFieldExpression><![CDATA[$F{Batch_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="0" width="81" height="20" uuid="66aa227e-9276-44d3-8698-6153fb50bf0a"/>
+				<textFieldExpression><![CDATA[$F{Discount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="0" width="81" height="20" uuid="adb69358-4b54-4f7f-a0fa-80a1c79f38f2"/>
+				<textFieldExpression><![CDATA[$F{batch_sche}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="0" width="81" height="20" uuid="bf76ece9-1533-4c29-9618-21a89d38091f"/>
+				<textFieldExpression><![CDATA[$F{s_phone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="648" y="0" width="81" height="20" uuid="fc9cddc6-b44d-4f96-94aa-5b9e540794fd"/>
+				<textFieldExpression><![CDATA[$F{s_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="729" y="0" width="81" height="20" uuid="3d06c27c-af0d-4fb9-a03d-85a77aa5d0ad"/>
+				<textFieldExpression><![CDATA[$F{s_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="810" y="0" width="81" height="20" uuid="a5a9cf3a-e82b-4c91-a3b1-ae3cdb578f16"/>
+				<textFieldExpression><![CDATA[$F{payment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="891" y="0" width="81" height="20" uuid="1d919a0b-d795-4bf7-9405-3305a5aa9d52"/>
+				<textFieldExpression><![CDATA[$F{due}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="972" y="0" width="81" height="20" uuid="05c9b9ae-b412-4cd3-a0f1-f4ec3d6175ca"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
